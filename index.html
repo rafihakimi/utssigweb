@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Praktikum SIG WEB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="peta.html">Peta</a>              
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <br><h1><b>Ujian Tengah Semester Praktikum SIG WEB</b></h1>
+      <a href="https://geodesi.ugm.ac.id/">Departemen Teknik Geodesi FT UGM</a>
+      <br><br>
+      
+      <style>
+        table, th, td {
+        border: 2px solid black;
+        }
+        </style>
+        <table style="width:100%">
+        <tr>
+            <th>Nama </th>
+            <th> Muhammad Rafi Hakimi</th> 
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td>21/479315/TK/52862</td>
+        </tr>
+        </table>
+
+        <br><br>
+        <h2 style="color:Tomato;">Formulir Validasi</h2>
+        <h5>Ketik <b>selesai</b> untuk mengonfimasi bahwa ujian telah selesai</h5>
+        <i>(hanya bisa dilakukan satu kali)</i><br>
+        Keterangan : <input id="keterangan" type="text"/><br>
+        <input type="button" onclick="tampilkan()" value="Klik"/>
+        
+
+        <script>
+            var lol;
+            ket = keterangan.value
+        
+        function verif () {
+            if (ket === 'selesai') {
+                return ('Benar')
+            }
+            else {return ('error')}
+        }
+        function tampilkan(){
+            alert(verif())
+        }
+        </script>
+        <br><br>
+        <h3 style="color:violet;"> Alhamdulillah </h3>
+</body>
+</html>
